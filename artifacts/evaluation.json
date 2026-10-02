@@ -1,0 +1,85 @@
+{
+  "created_at": "2026-10-01T18:06:45.252174+00:00",
+  "sklearn_version": "1.8.0",
+  "preprocessing_version": "regex-english-stopwords-porter-v1",
+  "dataset_sha256": "ffcc927812dccb5cc7ed6d6780ba66a8ec1ff4bd6b55637d8605e67a7429dfb1",
+  "audit": {
+    "raw_rows": 5572,
+    "missing_values": {
+      "Category": 0,
+      "Message": 0
+    },
+    "raw_class_counts": {
+      "ham": 4825,
+      "spam": 747
+    },
+    "blank_messages": 0,
+    "duplicate_rows": 415,
+    "duplicate_message_texts": 415,
+    "conflicting_message_texts": 0,
+    "conflicting_rows_removed": 0,
+    "usable_rows": 5157,
+    "class_counts": {
+      "ham": 4516,
+      "spam": 641
+    }
+  },
+  "split": {
+    "train_rows": 4125,
+    "test_rows": 1032,
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratified": true
+  },
+  "vocabulary_size": 3000,
+  "models": {
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.9709302325581395,
+      "precision": 1.0,
+      "recall": 0.765625,
+      "f1": 0.8672566371681416,
+      "confusion_matrix": [
+        [
+          904,
+          0
+        ],
+        [
+          30,
+          98
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.9680232558139535,
+      "precision": 0.9702970297029703,
+      "recall": 0.765625,
+      "f1": 0.8558951965065502,
+      "confusion_matrix": [
+        [
+          901,
+          3
+        ],
+        [
+          30,
+          98
+        ]
+      ]
+    },
+    "Linear SVM": {
+      "accuracy": 0.9806201550387597,
+      "precision": 0.9655172413793104,
+      "recall": 0.875,
+      "f1": 0.9180327868852459,
+      "confusion_matrix": [
+        [
+          900,
+          4
+        ],
+        [
+          16,
+          112
+        ]
+      ]
+    }
+  }
+}
